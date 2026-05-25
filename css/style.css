@@ -127,13 +127,17 @@ body {
 }
 
 header{
-    background-color: var(--surface-color);
-    box-shadow: 0 2px 4px var(--shadow-color);
-    padding: var(--spacing-unit) 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-radius: 15px;
+  background-color: var(--surface-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  padding: var(--spacing-unit) 0;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  border-radius: 15px;
+  display: flex;
+  width: 99%;
+  opacity: 0.8;
 }
 
 /* In your HEADER & NAVIGATION section */
@@ -158,18 +162,18 @@ footer {
 }
 
 header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 var(--spacing-unit);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
 }
 
 header nav ul{
-    display: flex;
-    gap: calc(var(--spacing-unit) * 2);
-    list-style: none;
+  display: flex;
+  gap: calc(var(--spacing-unit) * 2);
+  list-style: none;
 }
 
 header nav ul li a{
@@ -184,6 +188,9 @@ header nav ul li a{
 .theme-switcher{
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 2%;
+  top: 35%;
 }
 
 .switch-label{
@@ -325,6 +332,13 @@ header nav ul li a{
 .about-text {
   /* Let the text column take up more space. 'flex: 2;' makes it twice as wide as the image column. */
   flex: 2;
+  margin-left: 10px;
+  padding: 0px 5px 10px 10px;
+  /* background-color: #007bff; */
+  border-radius: 5px;
+  /* box-shadow: 0 0px 10px black; */
+  /* border: 1px solid black; */
+  text-align: center;
 }
 
 .about-text p {
@@ -1026,6 +1040,10 @@ footer ul li a:hover {
     gap: var(--spacing-unit);
   }
 
+  .about-text {
+    box-shadow: 0px 0px 15px;
+  }
+
   /* === Typography Adjustments === */
   
   /* 
@@ -1076,6 +1094,7 @@ footer ul li a:hover {
 
   footer ul li a {
     padding: 0.4rem; /* Add padding to create a larger tap target */
+    font-size: 1em;
   }
 
 }
