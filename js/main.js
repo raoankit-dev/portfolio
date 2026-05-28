@@ -200,21 +200,31 @@ themeToggle.addEventListener('click', () => {
  * This code runs after the entire page structure (DOM) is loaded.
  */
 document.addEventListener('DOMContentLoaded', () => {
-  // When the DOM is ready, we call our function to render the projects.
-  renderProjects();
-});
-
-/**
- * =======================================
- * INITIALIZATION
- * =======================================
- * This code runs after the entire page structure (DOM) is loaded.
- */
-document.addEventListener('DOMContentLoaded', () => {
   // Render the projects when the DOM is ready.
   renderProjects();
 
-  // --- NEW CODE STARTS HERE: ASYNCHRONOUS FORM SUBMISSION ---
+  // --- NEW CODE STARTS HERE: MOBILE MENU LOGIC ---
+  const mobileMenuToggle = document.querySelector('#mobile-menu');
+  const navList = document.querySelector('header nav ul');
+  const navLinks = document.querySelectorAll('header nav ul li a');
+
+  if (mobileMenuToggle && navList) {
+    // Toggle menu visibility
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenuToggle.classList.toggle('active');
+      navList.classList.toggle('nav-active');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('active');
+        navList.classList.remove('nav-active');
+      });
+    });
+  }
+
+  // --- ASYNCHRONOUS FORM SUBMISSION ---
 
   // Check if the contact form exists on the page before adding the listener.
   if (contactForm) {
