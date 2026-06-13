@@ -12,36 +12,27 @@ const projects = [
   // Each key (e.g., 'title') is a string, followed by a colon,
   // and then its value. Commas separate each key-value pair.
   {
-    // The title of the project. This will be displayed as the main heading of the card.
-    title: "Portfolio Project (This Website!)",
-
-    // A brief description of the project. Explain the technologies used and its purpose.
-    description: "A responsive personal portfolio built from scratch using HTML, CSS, and vanilla JavaScript. Features a dynamic theme switcher and is populated by a JavaScript data structure.",
-
-    // The path to the project's image. The path is relative to the index.html file.
-    imageUrl: "./images/placeholder1.jpg",
-
-    // The URL to the live, deployed version of the project.
-    liveUrl: "https://your-live-site.com", // Replace with your actual deployed URL when ready
-
-    // The URL to the project's source code on a platform like GitHub.
-    codeUrl: "https://github.com/your-username/your-repo-name" // Replace with your actual GitHub repo
+    title: "Random-Password-Generator",
+    description: "This is a simple web-app made using HTML, CSS and JavaScript. This app generates random password by simpley clicking on generate button. Password max length is 8 digits.",
+    imageUrl: "./images/placeholder2.jpg",
+    liveUrl: "https://raoankit-dev.github.io/password-generator/",
+    codeUrl: "https://github.com/raoankit-dev/password-generator.git"
   },
   
   {
-    title: "E-commerce Website Concept",
-    description: "A concept design and front-end implementation for an e-commerce platform. Focused on a clean UI, responsive product grids, and a streamlined checkout process using modern CSS techniques.",
+    title: "Weather-App",
+    description: "A responsive web application designed to fetch and display real-time temperature data for user-specified cities. Built with clean UI principles and integrates a third-party weather API for seamless data retrieval and accurate live updates.",
     imageUrl: "./images/placeholder2.jpg", // Make sure to add this image to your 'images' folder!
-    liveUrl: "#", // Use "#" if there's no live link yet
-    codeUrl: "https://github.com/your-username/ecommerce-repo" // Replace with your repo link
+    liveUrl: "https://raoankit-dev.github.io/Weather-app/", // Use "#" if there's no live link yet
+    codeUrl: "https://github.com/raoankit-dev/Weather-app.git" // Replace with your repo link
   },
 
   {
     title: "Task Management App",
-    description: "A client-side task management application built with vanilla JavaScript. Allows users to add, edit, delete, and mark tasks as complete, with all data saved to localStorage.",
+    description: "A minimalist, web-based task management application designed for simplicity and focus. Featuring a sleek, dark-themed user interface, it allows users to quickly log, track, and manage their daily tasks without any unnecessary clutter.",
     imageUrl: "./images/placeholder3.jpg", // Add this image to your 'images' folder
-    liveUrl: "#",
-    codeUrl: "https://github.com/your-username/task-app-repo" // Replace with your repo link
+    liveUrl: "https://raoankit-dev.github.io/todo-app/",
+    codeUrl: "https://github.com/raoankit-dev/todo-app.git" // Replace with your repo link
   }
 ];
 
