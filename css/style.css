@@ -356,6 +356,8 @@ header nav ul li a{
 .about-image{
   flex: 1;
   max-width: 300px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border-radius: 50%;
 }
 
 .about-image img{
@@ -436,7 +438,7 @@ header nav ul li a{
 .project-card {
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
-  box-shadow: 0 4px 8px var(--shadow-color);
+  /* box-shadow: 0 4px 8px var(--shadow-color); */
   overflow: hidden;
   border-radius: var(--border-radius);
   
@@ -560,7 +562,7 @@ header nav ul li a {
 .project-card {
   /* ... your existing .project-card styles remain here ... */
   /* Use the lighter --surface-color so the card stands out from the page background. */
-  background-color: var(--surface-color);
+  /* background-color: var(--surface-color); */
   
   /* Add our consistent rounded corners and a subtle border. */
   border-radius: var(--border-radius);
